@@ -11,14 +11,18 @@
 		CEA361862AF725E20075C4F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA361852AF725E20075C4F9 /* ContentView.swift */; };
 		CEA361882AF725E40075C4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA361872AF725E40075C4F9 /* Assets.xcassets */; };
 		CEA3618B2AF725E40075C4F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA3618A2AF725E40075C4F9 /* Preview Assets.xcassets */; };
+		CF3355DF61C1676643D4A672 /* libPods-LVSwiftMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E8988A91A24784930C4C51 /* libPods-LVSwiftMall.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02E8988A91A24784930C4C51 /* libPods-LVSwiftMall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LVSwiftMall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571BF2885A1A7767651A0EE5 /* Pods-LVSwiftMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LVSwiftMall.debug.xcconfig"; path = "Target Support Files/Pods-LVSwiftMall/Pods-LVSwiftMall.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA361802AF725E20075C4F9 /* LVSwiftMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LVSwiftMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA361832AF725E20075C4F9 /* LVSwiftMallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSwiftMallApp.swift; sourceTree = "<group>"; };
 		CEA361852AF725E20075C4F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEA361872AF725E40075C4F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA3618A2AF725E40075C4F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB86796ECBC733C7AC9CBAC1 /* Pods-LVSwiftMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LVSwiftMall.release.xcconfig"; path = "Target Support Files/Pods-LVSwiftMall/Pods-LVSwiftMall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3355DF61C1676643D4A672 /* libPods-LVSwiftMall.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4A910F350AF1723895C528F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				571BF2885A1A7767651A0EE5 /* Pods-LVSwiftMall.debug.xcconfig */,
+				DB86796ECBC733C7AC9CBAC1 /* Pods-LVSwiftMall.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pod/Pods;
+			sourceTree = "<group>";
+		};
 		CEA361772AF725E20075C4F9 = {
 			isa = PBXGroup;
 			children = (
 				CEA361822AF725E20075C4F9 /* LVSwiftMall */,
 				CEA361812AF725E20075C4F9 /* Products */,
+				A4A910F350AF1723895C528F /* Pods */,
+				EB9FD3EA987F041664D1178E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EB9FD3EA987F041664D1178E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02E8988A91A24784930C4C51 /* libPods-LVSwiftMall.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA3618E2AF725E40075C4F9 /* Build configuration list for PBXNativeTarget "LVSwiftMall" */;
 			buildPhases = (
+				6291B1F86B9C66F5A463CB21 /* [CP] Check Pods Manifest.lock */,
 				CEA3617C2AF725E20075C4F9 /* Sources */,
 				CEA3617D2AF725E20075C4F9 /* Frameworks */,
 				CEA3617E2AF725E20075C4F9 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6291B1F86B9C66F5A463CB21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LVSwiftMall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEA3617C2AF725E20075C4F9 /* Sources */ = {
@@ -263,6 +314,7 @@
 		};
 		CEA3618F2AF725E40075C4F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571BF2885A1A7767651A0EE5 /* Pods-LVSwiftMall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,6 +345,7 @@
 		};
 		CEA361902AF725E40075C4F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB86796ECBC733C7AC9CBAC1 /* Pods-LVSwiftMall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

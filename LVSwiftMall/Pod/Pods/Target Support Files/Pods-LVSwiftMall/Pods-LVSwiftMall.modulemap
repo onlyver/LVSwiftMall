@@ -1,0 +1,6 @@
+module Pods_LVSwiftMall {
+  umbrella header "Pods-LVSwiftMall-umbrella.h"
+
+  export *
+  module * { export * }
+}

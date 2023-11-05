@@ -1,0 +1,13 @@
+workspace   '../LVSwiftMall.xcworkspace'
+project     '../LVSwiftMall.xcodeproj'
+platform :ios, '12.0'
+inhibit_all_warnings!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
+target 'LVSwiftMall' do
+
+   pod 'Alamofire'
+   pod 'SnapKit'
+  
+end
